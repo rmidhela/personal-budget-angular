@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Budget</title>
+    <!-- This is an SEO Change - 1 -->
+    <title>Personal Budget - App for Budget Management</title>
+    
+    <!-- This is an SEO Change - 2 -->
+    <meta name="description" content="With our free budget management app, you are capable of managing your own spending by Tracking your spending, creating alerts, and reach your financial targets." />
+    <meta name="keywords" content="Budget management, financial planning, and personal budgeting, budget management, budget app, financial planning" />
+
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-
-    <div class="menu">
+    <!-- This is a Semantic HTML Change - 1 -->
+    <!-- Replaced <div> with <nav> -->
+        <!-- This is an A11y Change - 1 -->
+        <!-- added role="navigation" to indicate navigation -->
+    <nav class="menu" role="navigation"> 
         <ul>
-            <li><a href="/">Homepage</a></li>
+            <!-- This is an A11y Change - 2 -->
+            <!-- added  aria-label="Go to Homepage" to indicate accessible names to links -->
+            <li><a href="/homepage.html" aria-label="Go to Homepage">Homepage</a></li>
+
             <li><a href="/about.html">About</a></li>
             <li><a href="/login.html">Login</a></li>
-            <li><a href="https://google.com">Google</a></li>
+            
+            <!-- This is an SEO Change - 3 -->
+            <!-- instead of using this <li><a href="https://google.com">Google</a></li> -->
+            <a href="https://www.google.com" target="_blank">Visit Google</a>
         </ul>
-    </div>
+    </nav>
 
-    <div class="hero">
-        <h1>Personal Budget</h1>
-        <h2>A personal-budget management app</h2>
-    </div>
+    <!-- This is a Semantic HTML Change - 2 -->
+    <!-- Replaced <div> with <header> -->
+        <!-- This is an A11y Change - 3 -->
+        <!-- added role="banner" to indicate landmarks -->
+    <header role="banner">
+        <div class="hero">
+            <h1>Personal Budget</h1>
+            <h2>A personal-budget management app</h2>
+        </div>
+    </header>
+    
 
     <div class="container center">
 
@@ -94,12 +116,13 @@
         </div>
 
     </div>
-
-    <div class="bottom">
+    <!-- This is a Semantic HTML Change - 3  -->
+    <!-- Replaced <div> with <footer> -->
+    <footer class="bottom">
         <div class="center">
             All rights reserved &copy; Fabio Nolasco
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>
