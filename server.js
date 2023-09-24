@@ -2,14 +2,15 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT||3000;
 const fs = require('fs');
+const cors = require('cors');
 
-app.use ('/', express.static('public'));
+// app.use ('/', express.static('public'));
+app.use(cors());
 
 
-
-app.get('/hello', (req, res) => {
-    res.send('Hello World!');
-});
+// app.get('/hello', (req, res) => {
+//     res.send('Hello World!');
+// });
 
 app.get('/budget', (req, res) => {
     fs.readFile('data.json','utf8',(err,data) => {
